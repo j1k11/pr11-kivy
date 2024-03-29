@@ -9,13 +9,13 @@ from kivy.uix.screenmanager import Screen, ScreenManager
 class MainPage(Screen):
     def __init__(self, name="first"):
         super().__init__(name=name)
-        btn1 = Button(text='Перший блок')
+        btn1 = Button(text='Аргентина')
         btn1.on_press = self.next1
-        btn2 = Button(text='Другий блок')
+        btn2 = Button(text='Австралія')
         btn2.on_press = self.next2
-        btn3 = Button(text= 'Третій блок')
+        btn3 = Button(text= 'Канада')
         btn3.on_press = self.next3
-        btn4 = Button(text='Четвертий блок')
+        btn4 = Button(text='Китай')
         btn4.on_press = self.next4
 
         layout = BoxLayout(orientation="vertical")
@@ -62,7 +62,7 @@ class MainPage(Screen):
 class ButtonOneScreen(Screen):
     def __init__(self, name="subscreen"):
         super().__init__(name=name)
-        btn_back = Button(text='Вернутися до вибору(головного меню)')
+        btn_back = Button(text='Буенос-Айрес')
         btn_back.on_press = self.go_back
        
        
@@ -81,7 +81,7 @@ class ButtonOneScreen(Screen):
 class ButtonTwoScreen(Screen):
     def __init__(self, name="subscreen"):
         super().__init__(name=name)
-        btn_back = Button(text= "Вернутися до вибору (головного меню)")
+        btn_back = Button(text= "Сідней")
         btn_back.on_press = self.go_back
 
 
@@ -100,7 +100,7 @@ class ButtonTwoScreen(Screen):
 class ButtonThirdScreen(Screen):
     def __init__(self, name="subscreen"):
         super().__init__(name=name)
-        btn_back = Button(text='Вернутися до вибору (головного меню)')
+        btn_back = Button(text='Канада')
         btn_back.on_press = self.go_back
         
         
@@ -116,7 +116,7 @@ class ButtonThirdScreen(Screen):
 class ButtonFourScreen(Screen):
     def __init__(self, name="subscreen"):
         super().__init__(name=name)
-        btn_back = Button(text='Вернутися до вибору (головного меню)')
+        btn_back = Button(text='Шанхай')
         btn_back.on_press = self.go_back
         
 
